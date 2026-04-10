@@ -736,7 +736,7 @@ with tabs[6]:
         return ""
 
     st.dataframe(
-        flagged_df.style.applymap(colour_anomaly, subset=["anomaly_type"])
+        flagged_df.style.map(colour_anomaly, subset=["anomaly_type"])
                         .background_gradient(subset=["z_score"], cmap="RdYlGn"),
         use_container_width=True, hide_index=True
     )
