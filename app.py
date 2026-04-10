@@ -325,6 +325,7 @@ with tabs[0]:
             marker_color="#6366f1",
             boxmean="sd",
         ))
+        fig2.update_yaxes(type="log", title_text="Engagement Rate (Log Scale)")
         styled_fig(fig2, "Engagement Rate Distribution", height=350)
         st.plotly_chart(fig2, use_container_width=True)
 
